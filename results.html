@@ -1,139 +1,180 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+  <head>
+    <title>MBTA Frequency Analysis</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+  </head>
 
-<head>
-	<title>MBTA Frequency Analysis</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-</head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="index.html">MBTA Frequency Analysis</a></h1>
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
 
-<body class="is-preload">
+      <!-- Menu -->
+      <nav id="menu">
+        <div class="inner">
+          <h2>Menu</h2>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="conclusions.html">Conclusions</a></li>
+          </ul>
+          <a href="#" class="close">Close</a>
+        </div>
+      </nav>
 
-	<!-- Page Wrapper -->
-	<div id="page-wrapper">
+      <!-- Wrapper -->
+      <section id="wrapper">
+        <header>
+          <div class="inner">
+            <h2>Results</h2>
+            <p>
+              Frequency analysis was done on the orange, red, and blue line as
+              well as the commuter rail. Fourier transformations were done on
+              each data set and the highest amplitude frequencies were extracted
+              from the data and put into graphs, with their respective peaks
+              being found.
+            </p>
+          </div>
+        </header>
 
-		<!-- Header -->
-		<header id="header">
-			<h1><a href="index.html">MBTA Frequency Analysis</a></h1>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
-		</header>
+        <!-- Content -->
+        <div class="wrapper">
+          <div class="inner">
+            <h3 class="major">Overview</h3>
+            <p>
+              Below are pictures of both low frequency and high frequency
+              transformations for both the low-frequency vibrations and
+              high-frequency vibrations. Two different data collections were
+              done for low-frequency versus high-frequency data, as it allowed
+              for more exact data collection and ease in analyzing and
+              transforming data.
+            </p>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<div class="inner">
-				<h2>Menu</h2>
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="methodology.html">Methodology</a></li>
-					<li><a href="results.html">Results</a></li>
-					<li><a href="conclusions.html">Conclusions</a></li>
-				</ul>
-				<a href="#" class="close">Close</a>
-			</div>
-		</nav>
+            <h3 class="major">Vibration Analysis</h3>
+            <p>
+              Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
+              Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
+              egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
+              in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+            </p>
 
-		<!-- Wrapper -->
-		<section id="wrapper">
-			<header>
-				<div class="inner">
-					<h2>Results</h2>
-					<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
-				</div>
-			</header>
+            <section class="features">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/vibrations_redline.png" alt=""
+                /></a>
+                <p>
+                  Vibrations measured on the Red Line, amplitude from DFT over
+                  frequency in hertz
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/vibrations_orangeline.png" alt=""
+                /></a>
+                <p>
+                  Vibrations measured on the Orange Line, amplitude from DFT
+                  over frequency in hertz
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/vibrations_blueline.png" alt=""
+                /></a>
+                <p>
+                  Vibrations measured on the Blue Line, amplitude from DFT over
+                  frequency in hertz
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/vibrations_commuterrail.png" alt=""
+                /></a>
+                <p>
+                  Vibrations measured on the Commuter Rail, amplitude from DFT
+                  over frequency in hertz
+                </p>
+              </article>
+            </section>
 
-			<!-- Content -->
-			<div class="wrapper">
-				<div class="inner">
+            <h3 class="major">Sound Analysis</h3>
+            <p>
+              Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
+              Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
+              egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
+              in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+            </p>
 
-					<h3 class="major">Lorem ipsum dolor</h3>
-					<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean
-						tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex
-						tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas
-						sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt
-						bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo.
-						Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt.
-						Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+            <section class="features">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/sound_redline.png" alt=""
+                /></a>
+                <p>
+                  Sound measured on the Red Line, amplitude from DFT over
+                  frequency in hertz
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/sound_orangeline.png" alt=""
+                /></a>
+                <p>
+                  Sound measured on the Orange Line, amplitude from DFT over
+                  frequency in hertz
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/sound_blueline.png" alt=""
+                /></a>
+                <p>
+                  Sound measured on the Blue Line, amplitude from DFT over
+                  frequency in hertz
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/plots/sound_commuterrail.png" alt=""
+                /></a>
+                <p>
+                  Sound measured on the Commuter Rail, amplitude from DFT over
+                  frequency in hertz
+                </p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
 
-					<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem.
-						Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu
-						faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec
-						commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit.
-						Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec
-						felis elementum varius.</p>
-
-					<h3 class="major">Vibration Analysis</h3>
-					<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat.
-						Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem
-						lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-
-					<section class="features">
-						<article>
-							<a href="#" class="image"><img src="images/plots/vibrations_redline.png" alt="" /></a>
-							<p>Vibrations measured on the Red Line, amplitude from DFT over frequency in hertz</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/plots/vibrations_orangeline.png" alt="" /></a>
-							<p>Vibrations measured on the Orange Line, amplitude from DFT over frequency in hertz</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/plots/vibrations_blueline.png" alt="" /></a>
-							<p>Vibrations measured on the Blue Line, amplitude from DFT over frequency in hertz</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/plots/vibrations_commuterrail.png" alt="" /></a>
-							<p>Vibrations measured on the Commuter Rail, amplitude from DFT over frequency in hertz</p>
-						</article>
-					</section>
-
-					<h3 class="major">Sound Analysis</h3>
-					<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat.
-						Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem
-						lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-
-					<section class="features">
-						<article>
-							<a href="#" class="image"><img src="images/plots/sound_redline.png" alt="" /></a>
-							<p>Sound measured on the Red Line, amplitude from DFT over frequency in hertz</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/plots/sound_orangeline.png" alt="" /></a>
-							<p>Sound measured on the Orange Line, amplitude from DFT over frequency in hertz</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/plots/sound_blueline.png" alt="" /></a>
-							<p>Sound measured on the Blue Line, amplitude from DFT over frequency in hertz</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/plots/sound_commuterrail.png" alt="" /></a>
-							<p>Sound measured on the Commuter Rail, amplitude from DFT over frequency in hertz</p>
-						</article>
-					</section>
-
-				</div>
-			</div>
-
-		</section>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
