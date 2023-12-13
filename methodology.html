@@ -70,14 +70,19 @@
               consistently and conveniently measure each line.
             </p>
             <p>
-              Phyphox app was opened and set on the floor of each rail line,
-              taking a reading of the low frequency vibrations in the
-              acceleration, travel, and deceleration of each ride. At the same
-              time, another phone did an audio spectrum (high frequency)
-              measurement also using the Phyphox app. Thus, each line had both
-              low-frequency and high-frequency vibration data collected that
-              could then be sent through a Fourier transformation for analysis
-              of frequency spectrums.
+              The Phyphox app was opened and set flat on the floor of each rail
+              line, being set down perpendicular to the forward motion of the
+              train and taking a reading of the low frequency vibrations in the
+              acceleration, travel, and deceleration of each ride. The frequency
+              vibrations had three degrees of freedom, being able to act in the
+              x, y, and z directions, but for the simplicity of analysis, the
+              net acceleration was the only dataset analyzed. At the same time
+              the vibrations of the train were being analyzed, another phone did
+              an audio spectrum (high frequency) measurement also using the
+              Phyphox app. Thus, each line had both low-frequency and
+              high-frequency vibration data collected that could then be sent
+              through a Fourier transformation for analysis of frequency
+              spectrums.
             </p>
             <p>
               Data was collected on the commuter rail, orange line, blue line,
@@ -105,6 +110,39 @@
                 >GitHub</a
               >.
             </p>
+          </div>
+          <div class="inner">
+            <h3 class="major">Reproducing Experiment</h3>
+            <p>
+              This experiment is highly reproducible, with necessary materials
+              and steps outlined below.
+            </p>
+            Materials:
+            <ul>
+              <li>Computer with MATLAB</li>
+              <li>Phone with Phyphox</li>
+            </ul>
+            Instructions:
+            <ol>
+              <li>
+                Record acceleration data with Phyphox by placing the phone on
+                the floor of the train car, perpendicular to the direction of
+                travel.
+              </li>
+              <li>Export the data as a csv to the computer with MATLAB.</li>
+              <li>
+                Download or clone our analysis code from
+                <a
+                  href="https://github.com/IanLum/mbta-frequency-analysis/tree/main"
+                  >GitHub</a
+                >.
+              </li>
+              <li>
+                Import the data into MATLAB, passing the appropriate file path
+                into the readtable function.
+              </li>
+              <li>Run the MATLAB script to visualize results.</li>
+            </ol>
           </div>
         </div>
       </section>
