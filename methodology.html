@@ -148,6 +148,30 @@
               rate, then plotted on a graph of amplitude versus frequency (in
               Hz).
             </p>
+
+            <p>
+            The Fast Fourier Transform (FFT) is an algorithm used to compute the Discrete Fourier Transform (DFT) more efficiently. The Fourier Transform takes in a signal in time domain with multiple frequencies and decomposes it to get the individual pure frequencies. These individual pure frequencies are denoted by v_i and broken up by the step positions indexed from 0 to N-1. N being the total number of samples taken. 
+            </p>
+
+            <img src="images/frequencyMatrix.jpg" width="50%" class="center" />
+            <figcaption width="50%" class="center">
+              (Tow, Computing the discrete Fourier transform)
+            </figcaption>
+            <p></p>
+
+            <p>This part of the DFT extracts the step positions which are then plugged into the W matrix. This matrix includes all the frequencies from the initial time domain signal.</p>
+     
+            <img src="images/Wmatrix.jpg" width="80%" class="center" />
+            <figcaption width="50%" class="center">
+              (Tow, Computing the discrete Fourier transform))
+            </figcaption>
+            <p></p>
+
+            <p>The cross product of W and x is then calculated to find the weights of each pure frequency. X represents the signal data collected in the time domain, which refers to the vibration frequency and for the second DFT, represents the sound frequency data collected. </p>
+
+            </figcaption>
+            <p></p>
+
             <p>
               All data analysis and visualization was performed in MATLAB and
               can be found on
