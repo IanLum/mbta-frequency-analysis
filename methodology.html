@@ -70,34 +70,62 @@
               consistently and conveniently measure each line.
             </p>
             <p>
-              The Phyphox app was opened and set flat on the floor of each rail
+              Phyphox app was opened and set flat on the floor of each rail
               line, being set down perpendicular to the forward motion of the
-              train and taking a reading of the low frequency vibrations in the
-              acceleration, travel, and deceleration of each ride. The frequency
-              vibrations had three degrees of freedom, being able to act in the
-              x, y, and z directions, but for the simplicity of analysis, the
-              net acceleration was the only dataset analyzed. At the same time
-              the vibrations of the train were being analyzed, another phone did
-              an audio spectrum (high frequency) measurement also using the
-              Phyphox app. Thus, each line had both low-frequency and
-              high-frequency vibration data collected that could then be sent
-              through a Fourier transformation for analysis of frequency
-              spectrums.
-              In data collection, the Phyphox app was opened and set flat on the floor of each rail line, being set down perpendicular to the forward motion of the train and taking readings 
-              of the low frequency vibrations in the acceleration, travel, and deceleration of each ride. The frequency vibrations had three degrees of freedom, the acceleration being read in the 
-              x, y, and z directions, but for the simplicity of analysis, the net acceleration was the only data analyzed.
+              train and taking readings of the low frequency vibrations in the
+              acceleration, travel, and deceleration of each ride. Sitting on
+              the floor of each train, the frequency vibrations had three
+              degrees of freedom, the acceleration being read in the x, y, and z
+              directions, but for the simplicity of analysis the net
+              acceleration was the only data analyzed. The x direction
+              corresponded to the direction perpendicular to the train's travel
+              (facing towards the window), the y direction corresponded to the
+              forward motion of the train (facing towards the front), and the z
+              direction corresponded to directly upwards. It was decided to only
+              analyze the net acceleration because in the qualitative experience
+              of riding a train, the vibrations often occur in every direction
+              and not solely aligned to those three axes, so the analysis of the
+              net acceleration upon the phone was a more accurate indicator of
+              the motion of the phone.
             </p>
 
-            <img src = "images/motion_model.png" width = "50%" class ="center"></img>
-            <figcaption width="50%" class = "center">Motion model demonstrating the coordinate system used in analysis</figcaption>
+            <img src="images/motion_model.png" width="50%" class="center" />
+            <figcaption width="50%" class="center">
+              Motion model demonstrating the coordinate system used in analysis
+            </figcaption>
             <p></p>
 
             <p>
-              At the same time the vibrations of the train were being analyzed, another phone did an audio spectrum (high frequency) 
-              measurement also using the Phyphox app. Thus, each line had both low-frequency and high-frequency vibration data collected 
-              that could then be sent through a Fourier transformation for analysis of frequency spectrums. 
+              Specifically, oscillations from 0-50Hz were focused on in the low
+              frequency data collection because they encapsulated both
+              infrasound (oscillations below ~20Hz that can be felt as
+              vibrations) and low frequency audible sounds (~20Hz - ~50Hz),
+              where each oscillation can be individually felt or heard,
+              potentially causing problems with perception amongst commuters. It
+              was expected that trains would have high amplitude vibrations at
+              frequencies less than or equal to 1Hz, as this is typically felt
+              as trains sway side to side. Additionally, it was expected that
+              there would be another common low frequency oscillation at a
+              slightly higher frequency corresponding to the bumps from
+              traveling over the joining of rails on the track as the train
+              traveled down the line. This is also a felt frequency that can be
+              qualitatively perceived on each line.
             </p>
-            
+            <p>
+              At the same time the low-frequency vibrations of the train were
+              being analyzed, another phone did an audio spectrum (high
+              frequency) measurement also using the Phyphox app, ranging from
+              50Hz to 100kHz frequencies to cover the rest of the audible
+              spectrum for humans. This was done to understand the effect that
+              higher frequency vibrations could have on commuters, and it was
+              done separately from the low frequency analysis to allow for more
+              exactness in the data collection and analysis of the low versus
+              high frequency vibrations. Thus, each line had both low-frequency
+              and high-frequency vibration data collected that could then be
+              sent through a Fourier transformation for analysis of their
+              respective frequency spectrums.
+            </p>
+
             <p>
               Data was collected on the commuter rail, orange line, blue line,
               and red line (the green line was down the day of data collection),
@@ -108,13 +136,17 @@
           <div class="inner">
             <h3 class="major">Analysis</h3>
             <p>
-              The vibration data was analyzed with the discrete Fourier
-              transform (DFT), also known as the fast Fourier transform (FFT).
-              The DFT finds the magnitude of various frequencies present in a
-              discretized signal. This allows for the elimination of noise and
-              reveals the most prevalent frequencies in a given signal. The
-              frequencies are normalized based on the sampling rate, then
-              plotted on a graph of amplitude versus frequency.
+              The vibration and sound data was analyzed with the Discrete Fourier
+              transform (DFT). The DFT solves for the magnitude of various
+              frequencies present in a discretized signal, accentuating the most
+              prevalent frequencies and expressing their relative frequencies
+              compared to the rest of the signal. This allows for the
+              elimination of random noise and reveals the most prevalent
+              frequencies in a given signal, enabling different frequencies to
+              be analyzed against each other rather than just a data collection
+              over time. The frequencies are normalized based on the sampling
+              rate, then plotted on a graph of amplitude versus frequency (in
+              Hz).
             </p>
             <p>
               All data analysis and visualization was performed in MATLAB and
@@ -122,7 +154,8 @@
               <a
                 href="https://github.com/IanLum/mbta-frequency-analysis/tree/main"
                 >GitHub</a
-              >.
+              >. The Matlab function FFT, or fast Fourier transform, was used to
+              perform the DFT.
             </p>
           </div>
           <div class="inner">
